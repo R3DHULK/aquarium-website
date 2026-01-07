@@ -330,7 +330,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
               <a
                 href="#products"
-                className="glassmorphism-lg px-8 py-4 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-black dark:text-white font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/50"
+                className="glassmorphism-lg px-8 py-4 rounded-lg bg-black dark:bg-white text-white dark:text-black font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:shadow-black/50 dark:hover:shadow-white/50 hover:scale-105"
               >
                 Explore Products
                 <ArrowRight className="w-5 h-5" />
@@ -536,7 +536,7 @@ export default function Home() {
                 href="https://wa.me/917278404766?text=Hi%20AquaWave!%20I'm%20interested%20in%20custom%20products."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block glassmorphism px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-black dark:text-white font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/50"
+                className="inline-block glassmorphism px-8 py-3 rounded-lg bg-black dark:bg-white text-white dark:text-black font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-black/50 dark:hover:shadow-white/50 hover:scale-105"
               >
                 Contact Us on WhatsApp
               </a>
@@ -613,7 +613,7 @@ export default function Home() {
                 href="https://wa.me/917278404766?text=Hi%20AquaWave!%20I'd%20like%20to%20share%20my%20review%20and%20feedback."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block glassmorphism px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-black dark:text-white font-semibold transition-all duration-300"
+                className="inline-block glassmorphism px-8 py-3 rounded-lg bg-black dark:bg-white text-white dark:text-black font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-black/50 dark:hover:shadow-white/50 hover:scale-105"
               >
                 Send Your Review
               </a>
@@ -637,7 +637,7 @@ export default function Home() {
             <div className="max-w-4xl mx-auto text-center mb-16">
               <button
                 onClick={() => setShowAllFAQs(!showAllFAQs)}
-                className="inline-block glassmorphism-lg px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-black dark:text-white font-semibold transition-all duration-300"
+                className="inline-block glassmorphism-lg px-8 py-3 rounded-lg bg-black dark:bg-white text-white dark:text-black font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-black/50 dark:hover:shadow-white/50 hover:scale-105"
               >
                 {showAllFAQs ? "View Less" : "View More"}
               </button>
