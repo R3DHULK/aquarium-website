@@ -4,6 +4,7 @@ import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { BubbleBackground } from "@/components/bubble-background"
 import {
+  ArrowRight,
   ArrowUp,
   Droplet,
   Award,
