@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useState } from "react"
 import { useTheme } from "@/app/providers"
 import { Menu, X, Sun, Moon } from "lucide-react"
+import { FishLogo } from "@/components/fish-logo"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -25,9 +26,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="#home" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center">
-              <span className="text-white font-bold text-lg">A</span>
-            </div>
+            <FishLogo />
             <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent hidden sm:inline">
               AquaWave
             </span>
