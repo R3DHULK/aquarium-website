@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { BubbleBackground } from "@/components/bubble-background"
 import {
-  ArrowRight,
+  ArrowUp,
   Droplet,
   Award,
   Users,
@@ -766,7 +766,7 @@ export default function Home() {
           className="fixed bottom-8 left-8 w-12 h-12 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white shadow-lg hover:shadow-cyan-500/50 flex items-center justify-center transition-all duration-300 z-40 hover:scale-110"
           aria-label="Back to top"
         >
-          <ArrowRight className="w-5 h-5 rotate-180" />
+          <ArrowUp className="w-5 h-5" /> {/* Changed from ArrowRight to ArrowUp */}
         </button>
       )}
 
