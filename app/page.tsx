@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
+import { BubbleBackground } from "@/components/bubble-background"
 import {
   ArrowRight,
   Droplet,
@@ -297,6 +298,8 @@ export default function Home() {
           id="home"
           className="relative min-h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden px-4"
         >
+          <BubbleBackground />
+
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-20 left-10 w-72 h-72 rounded-full blur-3xl opacity-20 from-cyan-400 to-blue-600 mix-blend-multiply"></div>
             <div className="absolute bottom-20 right-10 w-72 h-72 rounded-full blur-3xl opacity-20 from-blue-400 to-cyan-600 mix-blend-multiply"></div>
