@@ -5,6 +5,7 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { BubbleBackground } from "@/components/bubble-background"
 import {
   ArrowUp,
+  ArrowRight,
   Droplet,
   Award,
   Users,
