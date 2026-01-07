@@ -288,6 +288,20 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 
 export default function Home() {
   const [showAllFAQs, setShowAllFAQs] = useState(false)
+  const [showBackToTop, setShowBackToTop] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 300)
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
   const visibleFAQs = showAllFAQs ? faqsData : faqsData.slice(0, 3)
 
   return (
@@ -316,7 +330,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
               <a
                 href="#products"
-                className="glassmorphism-lg px-8 py-4 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/50"
+                className="glassmorphism-lg px-8 py-4 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/50 dark:text-white"
               >
                 Explore Products
                 <ArrowRight className="w-5 h-5" />
@@ -745,6 +759,16 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      {showBackToTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 left-8 w-12 h-12 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white shadow-lg hover:shadow-cyan-500/50 flex items-center justify-center transition-all duration-300 z-40 hover:scale-110"
+          aria-label="Back to top"
+        >
+          <ArrowRight className="w-5 h-5 rotate-180" />
+        </button>
+      )}
 
       <Footer />
     </>
